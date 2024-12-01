@@ -244,6 +244,7 @@ section h2 {
 .contacto{
     margin: 0;
     text-align: center !important;
+    whith: 500px;
 }
 .contacto h2, p{
     text-align: center !important;

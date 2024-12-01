@@ -247,6 +247,7 @@ section h2 {
 }
 .contacto h2, p{
     text-align: center !important;
+    margin-top: 10px; /* Espacio entre las dos imágenes */
 }
 .registro{
     text-align: center;

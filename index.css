@@ -247,7 +247,7 @@ section h2 {
 }
 .contacto h2, p{
     text-align: center !important;
-    margin-top: 10px; /* Espacio entre las dos imágenes */
+    margin-bottom: 10px; /* Espacio entre las dos imágenes */
 }
 .registro{
     text-align: center;
@@ -389,6 +389,7 @@ footer {
 .botonInstagram{
     display: flex;
     color: #fff;
+    margin-top: 10px; /* Espacio entre las dos imágenes */
     width: 60px;
     height: 25px;
     text-align: center;

@@ -12,6 +12,9 @@ body {
     padding: 0; 
     overflow-y: scroll; /* Asegura que el scroll esté siempre visible */
 }
+body p {
+    text-align: justify;
+}
 header {
     background-color: rgb(19, 59, 45);
     padding: 5px;

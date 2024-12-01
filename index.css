@@ -243,9 +243,10 @@ section h2 {
 }
 .contacto{
     margin: 0;
+    text-align: center !important;
 }
 .contacto h2, p{
-    text-align: center;
+    text-align: center !important;
 }
 .registro{
     text-align: center;

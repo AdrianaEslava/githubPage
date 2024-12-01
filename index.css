@@ -283,7 +283,7 @@ section h2 {
 
 p {
     color: #3b2d04;
-    text-align: justify;
+    text-align: justify !important;
 }
 
 ul {

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velena</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header class="header">
+        <img src="velenaBlancoSinFondo.png" alt="Imagen 1" class="imagen imagen-1">
+        <img src="corazonBlancoSinFondo.png" alt="Imagen 2" class="imagen imagen-2">
+        <!-- Compra -->
+        <div class="container-icon">
+            <div class="container-cart-icon">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="icon-cart"
+                >
+                    <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+                    />
+                </svg>
+                <div class="count-products">
+                    <span id="contador-productos">0</span>
+                </div>
+            </div>
+
+            <div class="container-cart-products hidden-cart">
+                <div class="row-product hidden">
+                    <div class="cart-product">
+                        <div class="info-cart-product">
+                            <span class="cantidad-producto-carrito">1</span>
+                            <p class="titulo-producto-carrito">Zapatos Nike</p>
+                            <span class="precio-producto-carrito">$80</span>
+                        </div>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="icon-close"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M6 18L18 6M6 6l12 12"
+                            />
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="cart-total hidden">
+                    <h3>Total:</h3>
+                    <span class="total-pagar">$200</span>
+                </div>
+                <p class="cart-empty">El carrito está vacío</p>
+            </div>
+        </div>
+
+    </header>
+    
+    <div class="container-items">
+        <div class="containernav">
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#Cabello">Cabello</a></li>
+                    <li><a href="#Limpieza de ropa">Jabón</a></li>
+                    <li><a href="#Otros">Otros</a></li>
+                    <li><a href="Registro%20Velena.html">Registrarse</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div> 
+    
+    <div class="image-slider">
+        <img src="canasto.jpg" alt="Imagen 1" class="slider-image">
+    </div>
+
+    <script src="index.js"></script>
+    <main class=".container-items">
+       
+        <section id="Cabello">
+            <h2>Cabello</h2>
+            <ul class="interactive-list">
+                <a href="Shampoo.html"><li class="list-item">
+                    <img src="Shampoo.jpg" alt="shampoo" class="item-image"></a>
+                    <p class="item-text"><a href="Shampoo.html">Shampoo<br>$25.000 COP</a></p>
+                    <div class="boton"><a href="Shampoo.html">Añadir</a></div></li></a>
+                <a href="Acondicionador.html"><li class="list-item">
+                    <img src="Acondicionador.jpg" alt="shampoo" class="item-image"></a>
+                    <p class="item-text"><a href="Acondicionador.html">Acondicionador<br>$20.000 COP</a></p>
+                    <div class="boton"><a href="Acondicionador.html">Añadir</a></div></li></a>
+                    <a href="AceiteDeCoco.html"><li class="list-item">
+                        <img src="AceiteDeCoco.jpg" alt="shampoo" class="item-image"></a>
+                        <p class="item-text"><a href="AceiteDeCoco.html">AceiteDeCoco<br>$23.000 COP</a></p>
+                        <div class="boton"><a href="AceiteDeCoco.html">Añadir</a></div></li></a>
+                    <a href="Tratamiento.html"><li class="list-item">
+                        <img src="Tratamiento.jpg" alt="shampoo" class="item-image"></a>
+                        <p class="item-text"><a href="Tratamiento.html">Tratamiento<br>$20.000 COP</a></p>
+                        <div class="boton"><a href="Tratamiento.html">Añadir</a></div></li></a>
+            </ul>
+        </section>
+
+        <section id="Limpieza de ropa">
+            <h2>Limpieza de ropa</h2>
+            <ul class="interactive-list">
+                <a href="Detergente.html"><li class="list-item">
+                    <img src="detergente.jpg" alt="shampoo" class="item-image"></a>
+                    <p class="item-text"><a href="Detergente.html">Detergente<br>$15.000 COP</a></p>
+                    <div class="boton"><a href="Detergente.html">Añadir</a></div></li></a>
+                    
+                <a href="Suavizante.html"><li class="list-item">
+                    <img src="soflan.jpg" alt="shampoo" class="item-image"></a>
+                    <p class="item-text"><a href="Suavizante.html">Suavizante<br>$15.000 COP</a></p>
+                    <div class="boton"><a href="Suavizante.html">Añadir</a></div></li></a>
+                        
+                <a href="Desengrasante.html"><li class="list-item">
+                    <img src="desengrasante.jpg" alt="shampoo" class="item-image"></a>
+                    <p class="item-text"><a href="Desengrasante.html">Desengrasante<br>$15.000 COP</a></p>
+                    <div class="boton"><a href="Desengrasante.html">Añadir</a></div></li></a>
+                        
+            </ul>
+        </section>
+        <section id="Otros">
+            <h2>Otros</h2>
+            <ul class="interactive-list">
+                <a href="JabonManos.html"><li class="list-item">
+                    <img src="jabonDeManos.jpg" alt="shampoo" class="item-image"></a>
+                    <p class="item-text"><a href="JabonManos.html">Jabón de manos<br>$8.000 COP</a></p>
+                    <div class="boton"><a href="JabonManos.html">Añadir</a></div></li></a>
+                    
+                <a href="JabonLosa.html"><li class="list-item">
+                    <img src="jabonDeLosa.jpg" alt="shampoo" class="item-image"></a>
+                    <p class="item-text"><a href="JabonLosa.html">Jabón de loza<br>$10.000 COP</a></p>
+                    <div class="boton"><a href="JabonLosa.html">Añadir</a></div></li></a>
+            </ul>
+        </section>
+        <section class="Acercade">
+            <h2>Acerca de</h2>
+            <p>Nuestra marca se especializa en la creación de productos naturales que combinan eficacia y cuidado para el hogar y el cuerpo. 
+                Con un enfoque en la sostenibilidad y el bienestar, ofrecemos una línea de productos para el cabello, como shampoos y acondicionadores elaborados con ingredientes botánicos, libres de químicos agresivos.
+                 Además, contamos con jabones artesanales para manos, ropa y loza que limpian profundamente mientras cuidan la piel y el medio ambiente.</p>
+        </section>
+        <section class="contacto">
+            <h2>Contacto</h2>
+            <address>
+                <p>Email: Velena@gmail.com</p>
+                <p>Teléfono: 3227335129 - 3054746142</p>
+            </address>
+            <div class="botonInstagram"><a href="https://www.instagram.com/velena_shampoo?igsh=eHR3bm95YnY3Z2Ix">
+                <img src="instagram.png"></a>
+           <a href="https://www.facebook.com/velena.shampoo?mibextid=ZbWKwL">
+                <img src="facebook.png">
+            </a></div>
+        </section>
+        
+    </main>
+
+    <footer>
+        <p> &copy;Velena 2024</p>
+    </footer>
+</body>
+</html>

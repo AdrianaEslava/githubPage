@@ -1,0 +1,500 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: rgb(247, 246, 214);
+    margin: 0;
+    padding: 0; 
+    overflow-y: scroll; /* Asegura que el scroll esté siempre visible */
+}
+header {
+    background-color: rgb(19, 59, 45);
+    padding: 5px;
+    margin: 0;
+    display: flex;
+    align-items: center; /* Alinea verticalmente los elementos */
+    justify-content: flex-start; /* Alinea los elementos al inicio */
+    height: 70px; /* Ajusta según sea necesario */
+}
+.imagen-1 {
+    height: 50px;
+    width: 120px;
+    margin-right: 10px; /* Espacio entre las dos imágenes */
+}
+
+.imagen-2 {
+    height: 50px;
+    width: 60px;
+    margin-right: 80%; /* Espacio entre las dos imágenes */
+}
+.icon-cart{
+    width: 40px;
+    height: 40px;
+    stroke: #fdfdfd;
+}
+.icon-cart:hover{
+    cursor: pointer;
+}
+/*compra class=boton comprar*/
+.botonComprar{
+    position: relative;
+}
+.count-products{
+    position: absolute;
+    top: 55%;
+    right: 0;
+    background-color: #b30808;
+    color: #000;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.count-products{
+    position: absolute;
+    top: 55%;
+    right: 0;
+
+    background-color: #000;
+    color: #fff;
+    width: 25px;
+    height: 25px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+#contador-productos{
+    font-size: 12px;
+}
+
+.container-cart-products{
+    position: absolute;
+    top: 50px;
+    right: 0;
+
+    background-color: #fff;
+    width: 400px;
+    z-index: 1;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+    border-radius: 10px;
+    
+}
+
+.cart-product{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.20);
+
+}
+
+.info-cart-product{
+    display: flex;
+    justify-content: space-between;
+    flex: 0.8;
+}
+
+.titulo-producto-carrito{
+    font-size: 20px;
+}
+
+.precio-producto-carrito{
+    font-weight: 700;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.cantidad-producto-carrito{
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.icon-close{
+    width: 25px;
+    height: 25px;
+}
+
+.icon-close:hover{
+    stroke: red;
+    cursor: pointer;
+}
+
+.cart-total{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    gap: 20px;
+}
+
+.cart-total h3{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.total-pagar{
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.hidden-cart{
+    display: none;
+}
+.containernav {
+    position: relative; 
+    margin-top: -2px; /* // ajusta el valor segun lo necesites */
+    background-color: rgb(212, 158, 7);
+    margin: 0px;
+    padding: 5px; 
+    text-align: center;
+    height: auto; /* //permite que se ajuste al contenido */
+ }
+
+.nav-list{
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;/*  // Espaciado entre elementos */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-list li {
+    font-size: 13px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.nav-list a:hover {
+    color: #081f02;
+}
+
+
+/* Imagen rotatoria */
+.image-slider {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5; /* Fondo para la transición entre imágenes */
+}
+
+.slider-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation: fade 1s ease-in-out;
+}
+
+/* Animación de transición */
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/* Main */
+main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+}
+section {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background-color: rgb(247, 246, 234);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+/* Titulares de secciones */
+section h2 {
+    color: #19302b ;
+    font-size: 1.8rem;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+.Acercade h2, p{
+    text-align: center;
+}
+.contacto{
+    margin: 0;
+}
+.contacto h2, p{
+    text-align: center;
+}
+.registro{
+    text-align: center;
+    margin: 2rem;
+    padding: 1.5rem;
+    background-color: rgb(247, 246, 214);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* Estilos de botones */
+.boton a {
+    display: inline-block;
+    background-color:rgb(212, 158, 7);
+    color: #fff;
+    width: 60px;
+    height: 25px;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.boton a:hover {
+    background-color:#f3dc90;
+}
+
+/* Servicios */
+.servicio {
+    margin-bottom: 1rem;
+}
+
+.servicio h3 {
+    color: #283d38 ;
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    color: #3b2d04;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px auto;
+    display: flex; /* Hace que los elementos estén en fila */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    gap: 20px; /* Espaciado entre los elementos */
+}
+.interactive-list .list-item {
+    list-style-type: none;
+    text-decoration: none;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 150px;        /* Ancho fijo */
+    height: 300px;       /* Alto fijo */
+    padding: 10px;
+    text-align: center;
+    display: flex;            /* Establecemos un flexbox para el contenedor */
+    flex-direction: column;   /* Los elementos se colocan de arriba a abajo */
+    justify-content: space-between;  /* Distribuye los elementos y asegura que el botón esté abajo */
+    overflow: hidden;         /* Evita que el contenido se desborde */
+    cursor: pointer;
+}
+.interactive-list a{
+    list-style-type: none;
+    text-decoration: none;
+    color: #3b2d04;
+    transition: color 0.3s;
+}
+.interactive-list a:hover{
+    list-style-type: none;
+    text-decoration: none;
+    color:  #4d411f;
+    text-decoration: underline;
+}
+.item-text {
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 1em;
+    color: #3b2d04;
+    text-align: center; /* Centrar el texto debajo de la imagen */
+}
+
+.item-text:hover {
+    list-style-type: none;
+    text-decoration: none;
+    color:  #4d411f;
+    text-decoration: underline;
+}
+.list-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.item-image {
+    width: 100px;
+    height: 150px;
+    padding: 10px;
+    border-radius: 10%; 
+    margin-bottom: 10px; /* Espacio entre imagen y texto */
+    object-fit: cover;
+}
+
+/* Footer */
+footer {
+    background-color:rgb(212, 158, 7);
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+}
+/* Personalización del scroll */
+::-webkit-scrollbar {
+    width: 8px; /* Ancho del scroll vertical */
+    height: 8px; /* Altura del scroll horizontal */
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(212, 158, 7); /* Color de la barra de desplazamiento */
+    border-radius: 6px; /* Bordes redondeados */
+    border: 3px; /* Espacio entre la barra y el borde */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(245, 208, 106); /* Color de la barra cuando se pasa el mouse */
+    cursor: pointer;
+}
+
+::-webkit-scrollbar-track {
+    background:rgb(19, 59, 45); /* Color de la pista (track) del scroll */
+    border-radius: 6px; /* Bordes redondeados de la pista */
+}
+.botonInstagram{
+    display: flex;
+    color: #fff;
+    width: 60px;
+    height: 25px;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    align-items: center; /* Alinea verticalmente los elementos */
+    justify-content: center; /* Alinea los elementos al inicio */
+}
+
+
+/* compra*/
+
+  .columna {
+    padding: 20px;
+    text-align: center;
+  }
+  .columna img{
+    width: 260px;
+    height: 400px;
+    text-align: center;
+  }
+
+.item{
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+}
+
+.item:hover{
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+}
+
+.item img{
+    width: 260px;
+    height: 400px;
+    text-align: center;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    transition: all .5s;
+}
+
+.item figure{
+    overflow: hidden;
+}
+
+.item:hover img{
+    transform: scale(1.2);
+}
+
+.info-product h2 {
+    margin: 0 0 5px 0; /* Solo margen inferior para separar ligeramente del precio */
+}
+.info-product {
+    padding: 15px 30px;
+    line-height: 2; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente */
+    justify-content: center; /* Centra verticalmente */
+    text-align: center; /* Centra el texto dentro de los elementos */
+}
+.price{
+    font-size: 18px;
+    font-weight: 900;
+    margin: 0;
+}
+
+.info-product button{
+    border: none;
+    background: none;
+    background-color: rgb(212, 158, 7);
+    width: 160px;
+    height: 30px;
+    color: #3b2d04;
+    display: inline-block;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.info-product button:hover{
+    background-color:#f3dc90;
+    color:  #4d411f;
+}
+
+.cart-empty{
+    padding: 20px;
+    text-align: center;
+}
+.hidden{
+    display: none;
+}
+.container-icon{
+    position: relative;
+}
+.botonFormulario{
+    display: inline-block;
+    background-color:rgb(212, 158, 7);
+    color: #3b2d04;
+    width: 60px;
+    height: 25px;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+.botonFormulario:hover{
+    background-color:#f3dc90;
+    color:  #4d411f;
+}

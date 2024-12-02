@@ -225,6 +225,7 @@ main {
 }
 section {
     margin-bottom: 2rem;
+    margin-left: 50px;
     padding: 1.5rem;
     background-color: rgb(247, 246, 234);
     border-radius: 8px;
@@ -242,9 +243,8 @@ section h2 {
     text-align: center;
 }
 .Acercade{
-    margin-top: 10%;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 .contacto{
     margin-left: 25%;
